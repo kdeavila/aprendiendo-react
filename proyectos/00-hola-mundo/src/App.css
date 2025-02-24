@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.tw-following-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.tw-follow-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tw-follow-card-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.tw-follow-card-info {
+    display: flex;
+    flex-direction: column;
 }
 
-.card {
-  padding: 2em;
+.tw-follow-card-info-name {
+    font-weight: bold;
+    font-size: 16px;
 }
 
-.read-the-docs {
-  color: #888;
+.tw-follow-card-info-username {
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.tw-follow-card-button {
+    width: 140px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.tw-follow-card-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.tw-follow-card-text {
+    display: block;
+}
+
+.tw-follow-card-stop-following {
+    display: none;
+}
+
+.is-following {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* Mostrar "Dejar de seguir" solo cuando se hace hover */
+.is-following:hover {
+    background-color: rgba(219, 42, 42, 0.1);
+    border: 1px solid rgba(219, 42, 42, 0.3);
+    color: rgba(219, 42, 42, 0.7);
+}
+
+.is-following:hover .tw-follow-card-text {
+    display: none;
+}
+
+.is-following:hover .tw-follow-card-stop-following {
+    display: block;
 }
