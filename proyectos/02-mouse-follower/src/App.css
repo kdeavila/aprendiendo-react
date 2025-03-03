@@ -1,0 +1,18 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cursor-follower {
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.6;
+  top: -10px;
+  left: -16px;
+  width: 40px;
+  height: 40px;
+}
