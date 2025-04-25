@@ -1,6 +1,6 @@
 
 # Proyectos del curso React de Midudev
-[Curso de React]:(https://www.cursoreact.dev)
+[Curso de React](https://www.cursoreact.dev)
 
 Este repositorio contiene una serie de proyectos desarrollados como parte del curso de React. Cada proyecto está organizado en una carpeta específica y aborda conceptos clave de React.
 
